@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header, footer {
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1 {
+    color: #5a5a5a;
+}
+
+h2, h3 {
+    color: #333333;
+    cursor: pointer;
+}
+
+.details, .hidden {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #e9e9e9;
+    margin: 5px 0;
+    padding: 5px;
+    border-left: 5px solid #333;
+}
+.dropdown-container {
+    display: flex;
+    justify-content: center; 
+    padding: 20px; 
+}
+
+select {
+    border-radius: 8px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+select:hover {
+    background-color: #333333; 
+    color: white;
+}
+
+select:focus {
+    outline: none; 
+    background-color: #333333; 
+}
+
+#academicYear {
+    margin-right: 5px; 
+}
+#term {
+    margin-left: 5px; 
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amr Yasser Badr's Report Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Report Card</h1>
+            <h2>Amr Yasser Badr</h2>
+            <p>ID: 231052121</p>
+        </header>
+        <div class="dropdown-container">
+        <select id="academicYear" onchange="changeYear()">
+            <option value="year1">Year 1</option>
+            <option value="year2">Year 2</option>
+            <option value="year3">Year 3</option>
+            <option value="year4">Year 4</option>
+        </select>
+
+        <select id="term" onchange="changeTerm()">
+            <option value="term1">Term 1</option>
+            <option value="term2">Term 2</option>
+        </select>
+        </div>
+
+        <div id="courses">
+            <div id="year1term1" class="course-details hidden">
+                <div class="course" onclick="toggleVisibility('english1-details')">
+                    <h3>English I GEN 101</h3>
+                    <div id="english1-details" class="details hidden">
+                        <p>Grade: D+ points: 2</p>
+                        <p>Total: 63/100</p>
+                    </div>
+                </div>
+                <div class="course" onclick="toggleVisibility('social-issues-details')">
+                    <h3>Social issues and anti-corruption GEN 103</h3>
+                    <div id="social-issues-details" class="details hidden">
+                        <p>Final Written Exam (60%): 47/60</p>
+                        <p>Midterm Written Exam (30%): 16/30</p>
+                        <p>Assignment (10%): 10/10</p>
+                        <p>Grade: C+ points: 2.6</p>
+                        <p>Total: 73/100</p>
+                    </div>
+                </div>
+                <div class="course" onclick="toggleVisibility('info-systems-details')">
+                    <h3>Fundamentals of Information Systems COM 102</h3>
+                    <div id="info-systems-details" class="details hidden">
+                        <p>Final Written Exam (60%): 30/50</p>
+                        <p>Midterm Written Exam (20%): 6/20</p>
+                        <p onclick="toggleVisibility('info-systems-quizzes')">Quizzes (10%):-</p>
+                        <ul id="info-systems-quizzes" class="hidden">
+                            <li>Quiz 1: 4/10</li>
+                        </ul>
+                        <p>Project (20%): 19/20</p>
+                        <p>Grade: C points: 2.4</p>
+                        <p>Total: 69/100</p>        
+                    </div>
+                </div>
+                <div class="course" onclick="toggleVisibility('discrete-math-details')">
+                    <h3>Discrete Mathematics BAS 102</h3>
+                    <div id="discrete-math-details" class="details hidden">
+                        <p>Final Written Exam (60%): 41/60</p>
+                        <p>Midterm Written Exam (30%): 19.5/30</p>
+                        <p>Assignment (10%): 10/10</p>
+                        <p>Grade: C points: 2.4</p>
+                        <p>Total: 71/100</p>
+                    </div>
+                </div>
+                <div class="course" onclick="toggleVisibility('intro-computers-details')">
+                    <h3>Introduction to Computers COM 101</h3>
+                    <div id="intro-computers-details" class="details hidden">
+                        <p>Grade: C points: 2.4</p>
+                        <p>Total: 71/100</p>
+                    </div>
+                </div>
+                <div class="course" onclick="toggleVisibility('Mathematics-details')">
+                    <h3>Mathematics BAS 101</h3>
+                    <div id="Mathematics-details" class="details hidden">
+                        <p>Final Written Exam (60%): 51/60</p>
+                        <p>Midterm Written Exam (30%): 29/30</p>
+                        <p>Bonus (10%): 11/10</p>
+                        <p>Grade: A- points: 3.4</p>
+                        <p>Total: 91/100</p>
+                    </div>
+                </div>
+                <div class="course" onclick="toggleVisibility('GPA-overall-details')">
+                    <h3>GPA Overall</h3>
+                    <div id="GPA-overall-details" class="details hidden">
+                        <p>Grade: Good points: 2.56</p>
+                        <p>Total: 438/600</p>
+                    </div>
+                </div>
+            </div>
+            <div id="year1term2" class="course-details hidden">
+                <div class="course" onclick="toggleVisibility('physics-details')">
+                    <h3>Physics BAS 103</h3>
+                </div>
+                <div id="physics-details" class="details hidden">
+                    <p>Final Written Exam (50%): 35/50</p>
+                    <p>Midterm Written Exam (20%): 16/20</p>
+                    <p>Attendance (10%): 9/10</p>
+                    <p>Practical Quiz (10%): 0/10</p>
+                    <p>Final Practical Exam (10%): 9/10</p>
+                    <p>Grade: C points: 2.4</p>
+                    <p>Total: 69/100</p>
+                </div>
+                <div class="course" onclick="toggleVisibility('logic-design-details')">
+                    <h3>Logic Design COM 104</h3>
+                </div>
+                <div id="logic-design-details" class="details hidden">
+                    <p>Final Written Exam (50%): 34/50</p>
+                    <p>Midterm Written Exam (20%): 14/20</p>
+                    <p onclick="toggleVisibility('logic-quizzes')">Quizzes (10%):-</p>
+                    <ul id="logic-quizzes" class="hidden">
+                        <li>Quiz 1: 0/5</li>
+                        <li>Quiz 2: 5/5</li>
+                    </ul>
+                    <p>Project (10%): 8/10</p>
+                    <p>Assignments (10%): 7.5/10</p>
+                    <p>Grade: C points: 2.4</p>
+                    <p>Total: 69/100</p>
+                </div>
+                <div class="course" onclick="toggleVisibility('english-details')">
+                    <h3>English II GEN 102</h3>
+                </div>
+                <div id="english-details" class="details hidden">
+                    <p>Final Written Exam (60%): 50/60</p>
+                    <p>Midterm Written Exam (20%): 16/20</p>
+                    <p onclick="toggleVisibility('english-quizzes')">Quizzes (20%):-</p>
+                    <ul id="english-quizzes" class="hidden">
+                        <li>Quiz 1: 21/22  "10.5/10"</li>
+                        <li>Quiz 2: 18/20 "9/10"</li>
+                    </ul>
+                    <p>Bonus: +4</p>
+                    <p>Grade: A- points: 3.4</p>
+                    <p>Total: 89/100</p>
+                </div>
+                <div class="course" onclick="toggleVisibility('programming-details')">
+                    <h3>Programming COM 103</h3>
+                </div>
+                <div id="programming-details" class="details hidden">
+                    <p>Final Written Exam (50%): 33/50</p>
+                    <p>Midterm Written Exam (20%): 5/20</p>
+                    <p onclick="toggleVisibility('programming-quizzes')">Quizzes (20%):-</p>
+                    <ul id="programming-quizzes" class="hidden">
+                        <li>Quiz 1: 9/10</li>
+                        <li>Quiz 2: 10/10</li>
+                    </ul>
+                    <p>Final Practical Exam (10%): 0/10</p>
+                    <p>Bonus Sheets: +5</p>
+                    <p>Grade: D+ points: 2</p>
+                    <p>Total: 62/100</p>
+                </div>
+                <div class="course" onclick="toggleVisibility('statistics-details')">
+                    <h3>Statistics and Probabilities BAS 104</h3>
+                </div>
+                <div id="statistics-details" class="details hidden">
+                    <p>Final Written Exam (60%): 46/60</p>
+                    <p>Midterm Written Exam (30%): 24/30</p>
+                    <p>Bonus (10%): 10/10</p>
+                    <p>Grade: B points: 3</p>
+                    <p>Total: 80/100</p>
+                </div>
+                <div class="course" onclick="toggleVisibility('management-details')">
+                    <h3>Fundamentals of Management BAS 203</h3>
+                </div>
+                <div id="management-details" class="details hidden">
+                    <p>Final Written Exam (60%): 31/60</p>
+                    <p>Midterm Written Exam (20%): 19/20</p>
+                    <p>Assignment (20%): 20/20</p>
+                    <p>Grade: C points: 2.4</p>
+                    <p>Total: 70/100</p>
+                </div>
+                <div class="course" onclick="toggleVisibility('GPA-overall1-details')">
+                    <h3>GPA Overall</h3>
+                    <div id="GPA-overall1-details" class="details hidden">
+                        <p>Grade: Good points: 2.55</p>
+                        <p>Total: 439/600</p>
+                    </div>
+            </div>
+        </div>
+        <footer>
+            <p>Report generated on: <span id="date"></span></p>
+        </footer>
+    </div>
+    <audio id="myAudio" autoplay>
+        <source src="111.m4a" type="audio/mpeg">
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>
